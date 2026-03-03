@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - SwiftCart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <h1>SwiftCart</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+        <div class="cart-icon">
+          <button id="cart-btn" class="cart-button">
+            🛒 <span id="cart-count" class="cart-count">0</span>
+          </button>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you. Let us know how we can help!</p>
+      </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-info-grid">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📍</div>
+            <h3>Our Location</h3>
+            <p>123 Commerce Street</p>
+            <p>New York, NY 10001</p>
+            <p>United States</p>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📞</div>
+            <h3>Phone Number</h3>
+            <p><a href="tel:+1-800-123-4567">+1 (800) 123-4567</a></p>
+            <p>Monday - Friday: 9am - 6pm EST</p>
+            <p>Saturday - Sunday: 10am - 4pm EST</p>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📧</div>
+            <h3>Email Address</h3>
+            <p>
+              <a href="mailto:support@swiftcart.com">support@swiftcart.com</a>
+            </p>
+            <p><a href="mailto:info@swiftcart.com">info@swiftcart.com</a></p>
+            <p>Response time: Within 24 hours</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="contact-form-wrapper">
+          <div class="contact-form-content">
+            <h2>Send us a Message</h2>
+            <p>
+              Fill out the form below and we'll get back to you as soon as
+              possible.
+            </p>
+
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+1 (800) 123-4567"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="support">Customer Support</option>
+                  <option value="sales">Sales Inquiry</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us more about your inquiry..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group checkbox">
+                <input type="checkbox" id="subscribe" name="subscribe" />
+                <label for="subscribe"
+                  >Subscribe to our newsletter for updates and offers</label
+                >
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                Send Message
+              </button>
+            </form>
+
+            <div id="form-message" class="form-message"></div>
+          </div>
+
+          <div class="contact-features">
+            <h3>Why Contact Us?</h3>
+            <ul class="features-list">
+              <li>
+                <span class="feature-icon">✓</span>
+                <span>Quick Response Time</span>
+              </li>
+              <li>
+                <span class="feature-icon">✓</span>
+                <span>Dedicated Support Team</span>
+              </li>
+              <li>
+                <span class="feature-icon">✓</span>
+                <span>Multiple Contact Options</span>
+              </li>
+              <li>
+                <span class="feature-icon">✓</span>
+                <span>Multilingual Support</span>
+              </li>
+              <li>
+                <span class="feature-icon">✓</span>
+                <span>Professional Service</span>
+              </li>
+              <li>
+                <span class="feature-icon">✓</span>
+                <span>Your Satisfaction is Our Priority</span>
+              </li>
+            </ul>
+
+            <h3 style="margin-top: 40px">FAQ</h3>
+            <div class="faq-list">
+              <div class="faq-item">
+                <h4>What are your business hours?</h4>
+                <p>
+                  We're available Monday-Friday 9am-6pm EST and Saturday-Sunday
+                  10am-4pm EST.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4>How long does it take to get a response?</h4>
+                <p>
+                  We aim to respond to all inquiries within 24 hours during
+                  business days.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4>Can I track my order?</h4>
+                <p>
+                  Yes! You'll receive a tracking number via email once your
+                  order ships.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section (Placeholder) -->
+    <section class="map-section">
+      <div class="container">
+        <h2 class="section-title">Find Us On The Map</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890122!2d-74.00601232346!3d40.71271723456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a991c20b8f%3A0xe8f7ca037d87d0c!2s123%20Commerce%20St%2C%20New%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>
+          The latest news, articles and resources sent to your inbox weekly.
+        </p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>SwiftCart</h3>
+          <p>
+            Your ultimate destination for online shopping with the best deals
+            and quality products.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">𝕏</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">in</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SwiftCart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="cart-close">&times;</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <!-- Cart items will be populated here -->
+      </div>
+      <div class="cart-summary">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button class="btn btn-primary btn-full">Checkout</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Handle contact form submission
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
+
+          const formMessage = document.getElementById("form-message");
+          formMessage.textContent =
+            "Thank you for your message! We will get back to you soon.";
+          formMessage.classList.add("success");
+
+          // Reset form
+          this.reset();
+
+          // Clear message after 5 seconds
+          setTimeout(() => {
+            formMessage.textContent = "";
+            formMessage.classList.remove("success");
+          }, 5000);
+        });
+    </script>
+  </body>
+</html>
