@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - SwiftCart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <h1>SwiftCart</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="cart-icon">
+          <button id="cart-btn" class="cart-button">
+            🛒 <span id="cart-count" class="cart-count">0</span>
+          </button>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="container">
+        <h1 class="section-title">All Products</h1>
+
+        <!-- Category Filter -->
+        <div class="filter-section">
+          <h3>Filter by Category</h3>
+          <div id="categories" class="categories-filter">
+            <!-- Categories will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loading-spinner" class="loading-spinner">
+          <div class="spinner"></div>
+          <p>Loading products...</p>
+        </div>
+
+        <!-- Products Grid -->
+        <div id="products-grid" class="products-grid">
+          <!-- Products will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>
+          The latest news, articles and resources sent to your inbox weekly.
+        </p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>SwiftCart</h3>
+          <p>
+            Your ultimate destination for online shopping with the best deals
+            and quality products.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">𝕏</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">in</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SwiftCart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modal-product-image" src="" alt="Product" />
+          </div>
+          <div class="modal-details">
+            <h2 id="modal-product-title"></h2>
+            <p id="modal-product-description"></p>
+            <div class="modal-meta">
+              <span class="modal-category" id="modal-product-category"></span>
+              <span class="modal-rating" id="modal-product-rating"></span>
+            </div>
+            <div class="modal-price">
+              <span class="price" id="modal-product-price"></span>
+            </div>
+            <div class="modal-actions">
+              <button class="btn btn-primary" id="modal-add-to-cart">
+                Add to Cart
+              </button>
+              <button class="btn btn-secondary" id="modal-buy-now">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="cart-close">&times;</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <!-- Cart items will be populated here -->
+      </div>
+      <div class="cart-summary">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button class="btn btn-primary btn-full">Checkout</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
